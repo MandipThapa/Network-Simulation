@@ -1,0 +1,124 @@
+Compuware COMNET III  Release 2.5.2.814  Fri Dec 18 16:50:09 2020   PAGE     1
+
+                                       CW                                       
+
+                         NODES: RECEIVED MESSAGE COUNTS                         
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+      RECEIVER            COUNT                   MESSAGE NAME
+______________________  __________  _________________________________________
+
+Butwal LAN.Butwal ATM          1    Butwal ATM msg source                    
+
+Edinburg LAN.ATM proce       980    Butwal ATM msg source                    
+Edinburg LAN.ATM proce       997    Itahari ATM msg source                   
+Edinburg LAN.ATM proce         1    Butwal Teller msg source                 
+Edinburg LAN.ATM proce         2    Itahari Teller msg source                
+
+
+
+Compuware COMNET III  Release 2.5.2.814  Fri Dec 18 16:50:09 2020   PAGE     2
+
+                                       CW                                       
+
+                           LINKS: CHANNEL UTILIZATION                           
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+                             FRAMES           TRANSMISSION DELAY (MS)       %
+LINK                   DELIVERED RST/ERR  AVERAGE    STD DEV    MAXIMUM   UTIL
+_____________________  _________ ______  _________  _________  _________  _____
+
+Butwal LAN.Butwal Link     19025      0      0.073      0.028      0.722 2.2549
+Itahari LAN.Itahari Li     19061      0      0.073      0.028      0.756 2.2556
+Edinburg LAN.Edinburg      12737      0      0.038      0.014      0.082 0.8031
+
+
+Compuware COMNET III  Release 2.5.2.814  Fri Dec 18 16:50:09 2020   PAGE     3
+
+                                       CW                                       
+
+                         WAN CLOUDS: FRAME DELAY BY VC                          
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                      FRAME DELAY (MS)               BURST SIZE (kb)
+  VC                      AVG      STD      MAX           AVG           MAX
+______________________  _______  _______  _______    ____________  ____________
+
+WAN Cloud
+  Butwal-Edinburg          1164      697     2518             158           320
+  Edinburg Butwal            17        0       22             111           243
+  Itahari Edinburg         1168      701     2522             159           320
+  Edinburg Itahari           17        0       17             111           251
+
+
+Compuware COMNET III  Release 2.5.2.814  Fri Dec 18 16:50:09 2020   PAGE     4
+
+                                       CW                                       
+
+                         WAN CLOUDS: FRAME COUNTS BY VC                         
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                                    FRAMES / KILOBITS
+  VC:  FRAMES                    ACCEPTED                     DROPPED
+       KILOBITS            NORMAL          DE           NORMAL          DE
+______________________  ____________  ____________   ____________  ____________
+
+WAN Cloud               (TOTAL KILOBITS TRANSMITTED =         5265 )
+  Butwal-Edinburg  Frm          1616          1570              0          9460
+                    kb           803           810              0          4656
+  Edinburg Butwal  Frm          2303           884              0             0
+                    kb           737           283              0             0
+  Itahari Edinburg Frm          1600          1582              0          9568
+                    kb           805           808              0          4692
+  Edinburg Itahari Frm          2304           878              0             0
+                    kb           737           281              0             0
+
+
+Compuware COMNET III  Release 2.5.2.814  Fri Dec 18 16:50:09 2020   PAGE     5
+
+                                       CW                                       
+
+                         WAN CLOUDS: ACCESS LINK STATS                          
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+CLOUD:                            FRAMES            BUFFER (BYTES)       % UTIL
+  ACCESS LINK  (ENTRY)     ACCEPTED    DROPPED    MAX     AVG     STD          
+               (EXIT)                                                          
+________________________  __________  _________  ______  ______  ______  ______
+
+WAN Cloud
+  Edinburg access  Entry        6369          0    N/A     N/A     N/A    34.50
+                    Exit        6368          0   33947    7808   10305   49.97
+  Butwal access    Entry        3186       9460    N/A     N/A     N/A    97.44
+                    Exit        3187          0      83       7      15   17.27
+  Itahari access   Entry        3182       9568    N/A     N/A     N/A    98.03
+                    Exit        3182          0      80       7      15   17.24
+
+
+Compuware COMNET III  Release 2.5.2.814  Fri Dec 18 16:50:09 2020   PAGE     6
+
+                                       CW                                       
+
+                   MESSAGE + RESPONSE SOURCES: MESSAGE DELAY                    
+
+                     REPLICATION 1 FROM 0.0 TO 60.0 SECONDS                     
+
+ORIGIN / MSG SRC NAME:  MESSAGES                 MESSAGE DELAY 
+  DESTINATION LIST      ASSEMBLED      AVERAGE       STD DEV       MAXIMUM
+______________________  _________   ____________  ____________  ____________
+
+Butwal LAN.Butwal Teller / src Butwal Teller msg source:
+  Edinburg LAN.ATM pro          1    1008.668 MS      0.000 MS   1008.668 MS
+Butwal LAN.Butwal ATM / src Butwal ATM msg source:
+  Edinburg LAN.ATM pro        518   21513.292 MS  13605.498 MS  51182.433 MS
+Itahari LAN.Itahari Teller / src Itahari Teller msg source:
+  Edinburg LAN.ATM pro          1   33986.285 MS      0.000 MS  33986.285 MS
+Itahari LAN.Itahari ATM / src Itahari ATM msg source:
+  Edinburg LAN.ATM pro        511   21796.426 MS  14132.238 MS  51880.044 MS
+Edinburg LAN.ATM processing server / src Edinburg msg response:
+  ECHO                          0       0.000 MS      0.000 MS      0.000 MS
